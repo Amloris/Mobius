@@ -18,7 +18,7 @@ int main()
 
 	cout << "Hello World" << endl;
 
-	getchar();
+	cin.ignore();
 
 	return 0;
 }
