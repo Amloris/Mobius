@@ -10,7 +10,6 @@ in the globalAccessItems.h header file.
 #define defiMatrix_h
 
 #include <iostream>
-
 using namespace std;
 
 class defiMatrix {	//this is a matrix class which can be unsymmetric and full
@@ -39,7 +38,17 @@ public:
 //Functions
 //-----------------------------------------------------------------------------
 defiMatrix::defiMatrix()  { std::cout << "Creating defiMatrix Class Object" << endl; }
-defiMatrix::~defiMatrix() { /*std::cout << "Deleting defiMatrix Class Object" << endl;*/ }
+defiMatrix::~defiMatrix() 
+{ 
+	//Deallocate Memory
+	for (int i = 0; i < m_nr; i++)
+	{
+		delete[] m_coeff[i];
+	}
+	delete[] m_coeff;
+
+	std::cout << "Deleting defiMatrix Class Object" << endl; 
+}
 defiMatrix::defiMatrix(int nr, int nc)
 {
 	//Load Data
