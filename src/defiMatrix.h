@@ -9,7 +9,7 @@ in the globalAccessItems.h header file.
 #ifndef defiMatrix_h
 #define defiMatrix_h
 
-#include "defiVector.h"
+#include <iostream>
 
 using namespace std;
 

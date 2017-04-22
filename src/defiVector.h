@@ -5,7 +5,7 @@ The defiVector class stores a vector (a 1D array).
 #ifndef defiVector_h
 #define defiVector_h
 
-#include <fstream>
+#include <iostream>
 
 using namespace std;
 
