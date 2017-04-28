@@ -1,6 +1,7 @@
 /* defiMatrix
 The defiMatrix class is for a full matrix. It stores the numbers
 of rows and columns and all the coefficients of the matrix.
+Best used for dense matrices.
 */
 
 #ifndef defiMatrix_h

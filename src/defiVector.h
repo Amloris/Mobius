@@ -1,5 +1,6 @@
 /* defiVector
 The defiVector class stores a vector (a 1D array).
+Best used for dense vectors.
 */
 
 #ifndef defiVector_h
@@ -27,6 +28,7 @@ public:
 	void setCoeff(int i, double value);	    //Set m_coeff[i] = value;
 	void addCoeff(int i, double value);	    //Add value to m_coeff[i];
 	double getCoeff(int i);	                //Return m_coeff[i];
+	double mag();
 	void print();	                        //Print useful info
 };
 
