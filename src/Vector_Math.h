@@ -1,3 +1,5 @@
+//Implements functions that use vectors exclusively.
+
 #ifndef Vector_Math_h
 #define Vector_Math_h
 
